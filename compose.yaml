@@ -1,0 +1,12 @@
+services:
+  openstarbound:
+    build: .
+    image: openstarbound
+    container_name: openstarbound
+    ports:
+      - "21025:21025/udp"
+      - "21025:21025/tcp"
+    volumes:
+      - ./mods:/starbound/mods:ro
+      - ./assets/packed.pak:/starbound/assets/packed.pak:ro
+      - ./storage:/storage
