@@ -9,4 +9,4 @@ services:
     volumes:
       - ./mods:/starbound/mods:ro
       - ./assets/packed.pak:/starbound/assets/packed.pak:ro
-      - ./storage:/storage
+      - ./storage:/starbound/storage
